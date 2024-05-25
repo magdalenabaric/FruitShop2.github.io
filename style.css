@@ -1,0 +1,274 @@
+/* CSS variables */
+:root {
+    --primary-color: rgb(225, 108, 24);
+    --secondary-color: #6c757d;
+    --font-size-base: 16px;
+    --font-family-base: Arial, sans-serif;
+}
+
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Global styles */
+body {
+    font-size: var(--font-size-base);
+    font-family: var(--font-family-base);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 209, 160);
+}
+
+.img-naslov {
+    width: 100%;
+    margin-top: -35%;
+    z-index: -999;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 12em;
+    top: 14vw;
+    text-align: center;
+    position: relative;
+    color: rgb(225, 108, 24);
+    padding-bottom: 2%;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+
+
+/* Header styles */
+.cart-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding-left: 1.9%;
+    padding-right: 1.8%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 86.2%;
+}
+
+.cart-button img {
+    margin-bottom: -9%;
+}
+
+.cart-badge {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+    margin-left: 0.5em;
+    font-size: 0.8em;
+}
+
+/* Items grid styles */
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1em;
+    margin-top: 1em;
+    margin-left: 3%;
+    margin-right: 3%;
+
+}
+
+.buy-mess {
+    color: rgb(225, 108, 24);
+    font-weight: 600;
+    font-size: 1.3vw;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffe9d0;
+    border: 2px solid rgb(225, 108, 24);
+    padding: 1em;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 2%;
+}
+
+.cart-items li img {
+    max-width: 10%;
+    max-height: 10%;
+}
+
+
+
+.item h2 {
+    margin-top: 0.5em;
+}
+
+.item p {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.add-to-cart-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal.show-modal {
+    display: block;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: #ffe9d0;
+    margin: 15% auto;
+    padding: 1em;
+    border: 2px solid rgb(225, 108, 24);
+    max-width: 600px;
+}
+
+.close {
+    float: right;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cart-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cart-items li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.cart-items li span {
+    margin-left: 0.5em;
+}
+
+.cart-total {
+    font-weight: bold;
+}
+
+.buy-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+/* select */
+#select1 {
+    background-color: #ffe9d0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    color: rgb(225, 108, 24);
+    font-size: 1.2vw;
+    margin-left: 67.7%;
+    border-radius: 8px;
+    border: 2px solid rgb(225, 108, 24);
+
+}
+
+option {
+    background-color: #ffe9d0;
+    color: rgb(225, 108, 24);
+
+}
+
+/* search */
+input {
+    background-color: #ffe9d0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-size: 1.2vw;
+    margin-left: 3%;
+    border: 2px solid rgb(225, 108, 24);
+    margin-top: 1%;
+    border-radius: 8px;
+}
+
+#myUL {
+    display: none;
+    width: 12.5%;
+    position: absolute;
+    background-color: #ffe9d0;
+    margin-left: 3%;
+    border-radius: 8px;
+    margin-top: 0%;
+    list-style-type: none;
+
+}
+
+#myUL li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2vw;
+    font-weight: 550;
+}
+
+#myUL li {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.emptyCart {
+    color: rgb(225, 108, 24);
+    font-size: 1.2vw;
+    font-weight: 600;
+}

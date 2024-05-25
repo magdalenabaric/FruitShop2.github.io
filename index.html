@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Shop</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poetsen+One&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="lato-regular">
+  <h1 class="poetsen-one-regular">FruitShop</h1>
+  <img src="images/Destination Wedding Wedding Website in Light Beige Abstract Watercolor Style.png" alt=""
+    class="img-naslov">
+  <div class="cart-container">
+    <button class="cart-button">Cart <img src="images/shopping-bag (2).png" alt=""><span
+        class="cart-badge">0</span></button>
+  </div>
+
+
+
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..">
+
+  <ul id="myUL">
+    <li id="all"><a href="#">All</a></li>
+    <li id="fruit-apple"><a href="#">Apple</a></li>
+    <li id="fruit-lemon"><a href="#">Lemon</a></li>
+    <li id="fruit-orange"><a href="#">Orange</a></li>
+    <li id="fruit-pear"><a href="#">Pear</a></li>
+    <li id="fruit-kiwi"><a href="#">Kiwi</a></li>
+    <li id="fruit-straww"><a href="#">Strawberry</a></li>
+    <li id="fruit-ananas"><a href="#">Ananas</a></li>
+    <li id="fruit-peach"><a href="#">Peach</a></li>
+  </ul>
+  <select id="select1">
+    <option value="1" selected="selected">Sort</option>
+    <option value="2">From lower price</option>
+    <option value="3">From higher price</option>
+  </select>
+  <div class="items-grid">
+  </div>
+
+  <div class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="cart-title">Cart</h2>
+      <ul class="cart-items">
+
+
+      </ul>
+      <p>Total: <span class="cart-total">$0.00</span></p>
+      <div class="buy-mess" style="display: none;">
+        You have successfully purchased the items!
+      </div>
+      <button class="buy-btn">Buy</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
